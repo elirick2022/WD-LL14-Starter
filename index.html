@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>API Search</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>API Search</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>API Search</h1>
 
-  <select name="area-select" id="area-select">
-    <option value="">Select Area</option>
-  </select>
+    <!-- Dropdown for selecting cuisine area -->
+    <select name="area-select" id="area-select">
+      <option value="">Select Area</option>
+    </select>
 
-  <div id="results"></div>
-  <script src="script.js"></script>
-</body>
+    <!-- Textbox for excluding ingredients -->
+    <div class="filter-container">
+      <label for="exclude-ingredient">Exclude ingredient:</label>
+      <input
+        type="text"
+        id="exclude-ingredient"
+        placeholder="e.g., chicken, tomato"
+      />
+    </div>
+
+    <div id="results"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
